@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/tao_terminal/__init__.py
+src/tao_terminal/display.py
+src/tao_terminal/main.py
+src/tao_terminal/parser.py
+src/tao_terminal.egg-info/PKG-INFO
+src/tao_terminal.egg-info/SOURCES.txt
+src/tao_terminal.egg-info/dependency_links.txt
+src/tao_terminal.egg-info/entry_points.txt
+src/tao_terminal.egg-info/requires.txt
+src/tao_terminal.egg-info/top_level.txt
+src/tao_terminal/data/taoteching.txt

@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tao-terminal"
+version = "0.1.0"
+description = "Muestra capítulos aleatorios del Tao Te Ching en tu terminal con estilo."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Tu Nombre", email = "tu@correo.com" }
+]
+keywords = ["tao", "taoism", "terminal", "cli", "ascii-art", "filosofia"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing",
+]
+
+dependencies = [
+    "colorama>=0.4.6",
+]
+
+[project.optional-dependencies]
+dev = ["build", "twine"]
+
+[project.scripts]
+tao = "tao_terminal.main:main"
+
+[project.urls]
+Homepage = "https://github.com/tu-usuario/tao-terminal"
+Issues = "https://github.com/tu-usuario/tao-terminal/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+tao_terminal = ["data/*.txt"]

@@ -1,0 +1,2 @@
+[console_scripts]
+tao = tao_terminal.main:main

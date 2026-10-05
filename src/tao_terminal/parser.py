@@ -95,12 +95,9 @@ def parsear_archivo(ruta: Path) -> list[Capitulo]:
 
 
 def cargar_tao(ruta: Path | None = None) -> list[Capitulo]:
-    """
-    Función de conveniencia: carga el archivo taoteching.txt que está
-    junto a este script, o en la ruta indicada.
-    """
     if ruta is None:
-        ruta = Path(__file__).parent / "taoteching.txt"
+        # El archivo vive ahora dentro del paquete en data/
+        ruta = Path(__file__).parent / "data" / "taoteching.txt"
     return parsear_archivo(ruta)
 
 

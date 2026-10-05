@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: tao-terminal
+Version: 0.1.0
+Summary: Muestra capítulos aleatorios del Tao Te Ching en tu terminal con estilo.
+Author-email: Tu Nombre <tu@correo.com>
+License: MIT
+Project-URL: Homepage, https://github.com/tu-usuario/tao-terminal
+Project-URL: Issues, https://github.com/tu-usuario/tao-terminal/issues
+Keywords: tao,taoism,terminal,cli,ascii-art,filosofia
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: colorama>=0.4.6
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# tao-terminal

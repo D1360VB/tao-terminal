@@ -15,8 +15,8 @@ import random
 import sys
 from pathlib import Path
 
-from parser import cargar_tao
-from display import mostrar_capitulo
+from tao_terminal.parser import cargar_tao
+from tao_terminal.display import mostrar_capitulo
 
 
 def construir_parser() -> argparse.ArgumentParser:
@@ -40,6 +40,10 @@ def construir_parser() -> argparse.ArgumentParser:
     p.add_argument(
         "--archivo", "-a", type=Path, default=None,
         help="Ruta alternativa al archivo taoteching.txt."
+    )
+    p.add_argument(
+    "--sin-color", "--no-color", action="store_true",
+    help="Desactiva los colores (útil para redirigir a archivo)."
     )
     return p
 
